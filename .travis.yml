@@ -6,4 +6,5 @@ before_install:
   - docker build -t eder87/docker-production-react -f Dockerfile.dev .
 
 script:
-  - docker run eder87/docker-production-react npm run test -- --coverage
+  # - docker run eder87/docker-production-react npm run test -- --coverage
+  - docker run eder87/docker-production-react npm run test
